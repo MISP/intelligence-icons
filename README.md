@@ -1,4 +1,3 @@
-
 # intelligence-icons
 
 **intelligence-icons** is a collection of icons and diagrams for building training and marketing materials around Intelligence sharing; including but not limited to CTI, MISP Threat Sharing, STIX 2.
@@ -13,7 +12,7 @@ This is work in progress.
 * **`svg`**: planned for future releases
 
 ## License
-This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/ 
+This work is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 
 - Copyright 2016 Bret Jordan - original works with some potential licensed material
 - Copyright 2018 Françoise Penninckx - redesign from scratch
@@ -21,6 +20,8 @@ This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 Inte
 Note: Following some legal uncertainty around some components in the original STIX 2 icon-set provided by Bret Jordan the icons were fully redesigned from scratch by Françoise Penninckx. This makes this collection fully compliant with the above license and copyright owners.
 
 Over time the icon set was expanded with additional icons.
+
+The font is [Roboto](https://fonts.google.com/specimen/Roboto) licensed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
 
 ## Examples
 ### Square
