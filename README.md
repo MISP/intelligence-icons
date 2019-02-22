@@ -1,6 +1,6 @@
 # intelligence-icons
 
-**intelligence-icons** is a collection of icons and diagrams for building training and marketing materials around Intelligence sharing; including but not limited to CTI, MISP Threat Sharing, STIX 2.
+**intelligence-icons** is a collection of icons and diagrams for building training and marketing materials around Intelligence sharing; including but not limited to CTI, [MISP Threat Sharing](https://www.misp-project.org/), [STIX](https://oasis-open.github.io/cti-documentation/).
 
 This is work in progress.
 
