@@ -5,11 +5,12 @@
 This is work in progress.
 
 ## Format and folders
-* **`ai`**: Source files in Adobe Illustrator format
+* **`[ai](./ai)`**: Source files in Adobe Illustrator format
 * **`tools`**: scripts for automated exports and such
 * **`square_png/xx/`**: PNG export with square around the icon in  `xx` by `xx` pixels
 * **`simple_png/xx/`** PNG export of the simple icon in  `xx` by `xx` pixels
-* **`svg`**: SVG export using Inkscape from .ai
+* **`[SVG](./svg)`**: SVG export using Inkscape from .ai
+* **`[PDF](./pdf)`**: PDF export using Inkscape from .ai
 
 ## License
 This work is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
