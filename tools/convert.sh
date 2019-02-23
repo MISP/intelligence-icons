@@ -10,8 +10,9 @@ createsvg() {
     output_pdf=$(echo "$pdf" | sed 's/...//' | sed 's/\.ai/.pdf/')
     echo "Convert AI to SVG $output ..."
     inkscape --export-text-to-path -f "$d" -l "../$output"
-    echo "Convert AI to PDF $output_pdf ..."
-    inkscape --export-text-to-path -f "$d" -A "../$output_pdf"
+    # PDF export is handled by Illustrator export as Inkscape does not recognize the two artboards/pages in CLI mode
+    # echo "Convert AI to PDF $output_pdf ..."
+    # inkscape --export-text-to-path -f "$d" -A "../$output_pdf"
   done
 }
 

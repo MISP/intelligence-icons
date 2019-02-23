@@ -31,14 +31,17 @@ if ( sourceFolder != null )
             var fileName = sourceDoc.name;
             var targetFileBase = fileName.split('.').slice(0, -1).join('.');
             // export all sizes as square
-            //hideLayer('color');
-            //showLayer('background');
-            //alert(" Processing " + targetFileBase);
+            setActiveArtboardByName('square', sourceDoc);  // choose the right artboard
             exportPNGFiles('square', sourceDoc, targetFileBase);
+            // FIXME exportSVGFile('square', sourceDoc, targetFileBase);
+
             // export all sizes as simple
-            //hideLayer('background');
-            //showLayer('color');
+            setActiveArtboardByName('simple', sourceDoc);  // choose the right artboard
             exportPNGFiles('simple', sourceDoc, targetFileBase);
+            // FIXME exportSVGFile('simple', sourceDoc, targetFileBase);
+
+            // PDF export has each artboard in a separate page
+            exportPDFFile(sourceDoc, targetFileBase);
             // close without saving
             sourceDoc.close(SaveOptions.DONOTSAVECHANGES);
         }
@@ -61,17 +64,64 @@ function setActiveArtboardByName(artboardName, sourceDoc) {
 
 function exportPNGFiles(targetType, sourceDoc, targetFileBase) {
     var targetFileExt = 'png';
-    setActiveArtboardByName(targetType, sourceDoc);  // choose the right artboard
     for ( i = 0; i < pngSizes.length; i++) {
-        targetFileSize = pngSizes[i];
-        var targetFolder = targetBasePath + '/' + targetType + '_' + targetFileExt + '/' + targetFileSize;
+        targetSize = pngSizes[i];
+        var targetFolder = targetBasePath + '/' + targetType + '_' + targetFileExt + '/' + targetSize;
         new Folder(targetFolder).create();
         var targetFullFilename = targetFolder + '/' + targetFileBase + '.' + targetFileExt;
         var targetFile = new File(targetFullFilename);
-        sourceDoc.exportFile(targetFile, ExportType.PNG24, getPNGOptions(targetFileSize, sourceDoc));
+        var artboardRect = sourceDoc.artboards[sourceDoc.artboards.getActiveArtboardIndex()].artboardRect;
+        var artboardSize = artboardRect[2] - artboardRect[0];
+
+        var exportOpts = new ExportOptionsPNG24();
+        exportOpts.antiAliasing = true;
+        exportOpts.artBoardClipping = true;
+        exportOpts.saveAsHTML = false;
+        exportOpts.transparency = true;
+        exportOpts.horizontalScale = 100.0/artboardSize*targetSize;
+        exportOpts.verticalScale = 100.0/artboardSize*targetSize;
+        sourceDoc.exportFile(targetFile, ExportType.PNG24, exportOpts);
         
     }
 }
+
+function exportSVGFile(targetType, sourceDoc, targetFileBase) {
+    // This code is not good
+    // See https://graphicdesign.stackexchange.com/questions/39505/illustrator-exporting-svg-viewbox-doesnt-match-artboard-size
+    var targetFileExt = 'svg';
+    var targetFolder = targetBasePath + '/' + targetType + '_' + targetFileExt;
+    new Folder(targetFolder).create();
+    var targetFullFilename = targetFolder + '/' + targetFileBase + '.' + targetFileExt;
+    var targetFile = new File(targetFullFilename);
+
+    var exportOpts = new ExportOptionsSVG();
+    exportOpts.preserveEditability = true;
+    exportOpts.embedAllFonts = true;
+    exportOpts.embedRasterImages = true;
+    exportOpts.fontType = SVGFontType.SVGFONT;
+    exportOpts.fontSubsetting = SVGFontSubsetting.GLYPHSUSED;
+    exportOpts.documentEncoding = SVGDocumentEncoding.UTF8;
+    sourceDoc.exportFile(targetFile, ExportType.SVG, exportOpts);
+}
+
+function exportPDFFile(sourceDoc, targetFileBase) {
+    var targetFileExt = 'pdf';
+    var targetFolder = targetBasePath + '/' + targetFileExt;
+    new Folder(targetFolder).create();
+    var targetFullFilename = targetFolder + '/' + targetFileBase + '.' + targetFileExt;
+    var targetFile = new File(targetFullFilename);
+
+    var exportOpts = new PDFSaveOptions();
+    exportOpts.preserveEditability = true;
+    exportOpts.compatibility = PDFCompatibility.ACROBAT8;
+    var flattenerOpts = new PrintFlattenerOptions();
+    flattenerOpts.clipComplexRegions = true;
+    flattenerOpts.convertTextToOutlines = true;
+
+    exportOpts.flattenerOptions = flattenerOpts;
+    sourceDoc.saveAs(targetFile, exportOpts);
+}
+
 
 function hideLayer(layerName, sourceDoc) {
     sourceDoc.layers.getByName(layerName).visible = false;
@@ -79,19 +129,4 @@ function hideLayer(layerName, sourceDoc) {
 
 function showLayer(layerName, sourceDoc) {
     sourceDoc.layers.getByName(layerName).visible = true;
-}
-
-function getPNGOptions(size, sourceDoc) {
-    var artboardRect = sourceDoc.artboards[sourceDoc.artboards.getActiveArtboardIndex()].artboardRect;
-    var artboardSize = artboardRect[2] - artboardRect[0];
-    var pngExportOpts = new ExportOptionsPNG24();
-    pngExportOpts.antiAliasing = true;
-    pngExportOpts.artBoardClipping = true;
-    // pngExportOpts.matte = true;
-    // pngExportOpts.matteColor = 0, 0, 0;
-    pngExportOpts.saveAsHTML = false;
-    pngExportOpts.transparency = true;
-    pngExportOpts.horizontalScale = 100.0/artboardSize*size;
-    pngExportOpts.verticalScale = 100.0/artboardSize*size;
-    return pngExportOpts;
 }
