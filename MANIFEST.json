@@ -1,0 +1,222 @@
+{
+  "icons": [
+    {
+      "name": "attack_pattern",
+      "source": "https://github.com/MISP/intelligence-icons/blob/master/ai/attack_pattern.ai",
+      "pdf_format": "https://github.com/MISP/intelligence-icons/raw/master/pdf/attack_pattern.pdf",
+      "png_format_256": "https://raw.githubusercontent.com/MISP/intelligence-icons/master/square_png/256/attack_pattern.png"
+    },
+    {
+      "name": "autonomous_system",
+      "source": "https://github.com/MISP/intelligence-icons/blob/master/ai/autonomous_system.ai",
+      "pdf_format": "https://github.com/MISP/intelligence-icons/raw/master/pdf/autonomous_system.pdf",
+      "png_format_256": "https://raw.githubusercontent.com/MISP/intelligence-icons/master/square_png/256/autonomous_system.png"
+    },
+    {
+      "name": "backdoor",
+      "source": "https://github.com/MISP/intelligence-icons/blob/master/ai/backdoor.ai",
+      "pdf_format": "https://github.com/MISP/intelligence-icons/raw/master/pdf/backdoor.pdf",
+      "png_format_256": "https://raw.githubusercontent.com/MISP/intelligence-icons/master/square_png/256/backdoor.png"
+    },
+    {
+      "name": "botnet",
+      "source": "https://github.com/MISP/intelligence-icons/blob/master/ai/botnet.ai",
+      "pdf_format": "https://github.com/MISP/intelligence-icons/raw/master/pdf/botnet.pdf",
+      "png_format_256": "https://raw.githubusercontent.com/MISP/intelligence-icons/master/square_png/256/botnet.png"
+    },
+    {
+      "name": "bundle",
+      "source": "https://github.com/MISP/intelligence-icons/blob/master/ai/bundle.ai",
+      "pdf_format": "https://github.com/MISP/intelligence-icons/raw/master/pdf/bundle.pdf",
+      "png_format_256": "https://raw.githubusercontent.com/MISP/intelligence-icons/master/square_png/256/bundle.png"
+    },
+    {
+      "name": "campaign",
+      "source": "https://github.com/MISP/intelligence-icons/blob/master/ai/campaign.ai",
+      "pdf_format": "https://github.com/MISP/intelligence-icons/raw/master/pdf/campaign.pdf",
+      "png_format_256": "https://raw.githubusercontent.com/MISP/intelligence-icons/master/square_png/256/campaign.png"
+    },
+    {
+      "name": "course_of_action",
+      "source": "https://github.com/MISP/intelligence-icons/blob/master/ai/course_of_action.ai",
+      "pdf_format": "https://github.com/MISP/intelligence-icons/raw/master/pdf/course_of_action.pdf",
+      "png_format_256": "https://raw.githubusercontent.com/MISP/intelligence-icons/master/square_png/256/course_of_action.png"
+    },
+    {
+      "name": "domain_name",
+      "source": "https://github.com/MISP/intelligence-icons/blob/master/ai/domain_name.ai",
+      "pdf_format": "https://github.com/MISP/intelligence-icons/raw/master/pdf/domain_name.pdf",
+      "png_format_256": "https://raw.githubusercontent.com/MISP/intelligence-icons/master/square_png/256/domain_name.png"
+    },
+    {
+      "name": "email_addr",
+      "source": "https://github.com/MISP/intelligence-icons/blob/master/ai/email_addr.ai",
+      "pdf_format": "https://github.com/MISP/intelligence-icons/raw/master/pdf/email_addr.pdf",
+      "png_format_256": "https://raw.githubusercontent.com/MISP/intelligence-icons/master/square_png/256/email_addr.png"
+    },
+    {
+      "name": "email_message",
+      "source": "https://github.com/MISP/intelligence-icons/blob/master/ai/email_message.ai",
+      "pdf_format": "https://github.com/MISP/intelligence-icons/raw/master/pdf/email_message.pdf",
+      "png_format_256": "https://raw.githubusercontent.com/MISP/intelligence-icons/master/square_png/256/email_message.png"
+    },
+    {
+      "name": "galaxy",
+      "source": "https://github.com/MISP/intelligence-icons/blob/master/ai/galaxy.ai",
+      "pdf_format": "https://github.com/MISP/intelligence-icons/raw/master/pdf/galaxy.pdf",
+      "png_format_256": "https://raw.githubusercontent.com/MISP/intelligence-icons/master/square_png/256/galaxy.png"
+    },
+    {
+      "name": "identity",
+      "source": "https://github.com/MISP/intelligence-icons/blob/master/ai/identity.ai",
+      "pdf_format": "https://github.com/MISP/intelligence-icons/raw/master/pdf/identity.pdf",
+      "png_format_256": "https://raw.githubusercontent.com/MISP/intelligence-icons/master/square_png/256/identity.png"
+    },
+    {
+      "name": "intrusionset",
+      "source": "https://github.com/MISP/intelligence-icons/blob/master/ai/intrusionset.ai",
+      "pdf_format": "https://github.com/MISP/intelligence-icons/raw/master/pdf/intrusionset.pdf",
+      "png_format_256": "https://raw.githubusercontent.com/MISP/intelligence-icons/master/square_png/256/intrusionset.png"
+    },
+    {
+      "name": "ipv4-addr",
+      "source": "https://github.com/MISP/intelligence-icons/blob/master/ai/ipv4-addr.ai",
+      "pdf_format": "https://github.com/MISP/intelligence-icons/raw/master/pdf/ipv4-addr.pdf",
+      "png_format_256": "https://raw.githubusercontent.com/MISP/intelligence-icons/master/square_png/256/ipv4-addr.png"
+    },
+    {
+      "name": "ipv6-addr",
+      "source": "https://github.com/MISP/intelligence-icons/blob/master/ai/ipv6-addr.ai",
+      "pdf_format": "https://github.com/MISP/intelligence-icons/raw/master/pdf/ipv6-addr.pdf",
+      "png_format_256": "https://raw.githubusercontent.com/MISP/intelligence-icons/master/square_png/256/ipv6-addr.png"
+    },
+    {
+      "name": "mac-addr",
+      "source": "https://github.com/MISP/intelligence-icons/blob/master/ai/mac-addr.ai",
+      "pdf_format": "https://github.com/MISP/intelligence-icons/raw/master/pdf/mac-addr.pdf",
+      "png_format_256": "https://raw.githubusercontent.com/MISP/intelligence-icons/master/square_png/256/mac-addr.png"
+    },
+    {
+      "name": "malware",
+      "source": "https://github.com/MISP/intelligence-icons/blob/master/ai/malware.ai",
+      "pdf_format": "https://github.com/MISP/intelligence-icons/raw/master/pdf/malware.pdf",
+      "png_format_256": "https://raw.githubusercontent.com/MISP/intelligence-icons/master/square_png/256/malware.png"
+    },
+    {
+      "name": "network_traffic",
+      "source": "https://github.com/MISP/intelligence-icons/blob/master/ai/network_traffic.ai",
+      "pdf_format": "https://github.com/MISP/intelligence-icons/raw/master/pdf/network_traffic.pdf",
+      "png_format_256": "https://raw.githubusercontent.com/MISP/intelligence-icons/master/square_png/256/network_traffic.png"
+    },
+    {
+      "name": "note",
+      "source": "https://github.com/MISP/intelligence-icons/blob/master/ai/note.ai",
+      "pdf_format": "https://github.com/MISP/intelligence-icons/raw/master/pdf/note.pdf",
+      "png_format_256": "https://raw.githubusercontent.com/MISP/intelligence-icons/master/square_png/256/note.png"
+    },
+    {
+      "name": "observed-data",
+      "source": "https://github.com/MISP/intelligence-icons/blob/master/ai/observed-data.ai",
+      "pdf_format": "https://github.com/MISP/intelligence-icons/raw/master/pdf/observed-data.pdf",
+      "png_format_256": "https://raw.githubusercontent.com/MISP/intelligence-icons/master/square_png/256/observed-data.png"
+    },
+    {
+      "name": "ransomware",
+      "source": "https://github.com/MISP/intelligence-icons/blob/master/ai/ransomware.ai",
+      "pdf_format": "https://github.com/MISP/intelligence-icons/raw/master/pdf/ransomware.pdf",
+      "png_format_256": "https://raw.githubusercontent.com/MISP/intelligence-icons/master/square_png/256/ransomware.png"
+    },
+    {
+      "name": "relationship",
+      "source": "https://github.com/MISP/intelligence-icons/blob/master/ai/relationship.ai",
+      "pdf_format": "https://github.com/MISP/intelligence-icons/raw/master/pdf/relationship.pdf",
+      "png_format_256": "https://raw.githubusercontent.com/MISP/intelligence-icons/master/square_png/256/relationship.png"
+    },
+    {
+      "name": "report",
+      "source": "https://github.com/MISP/intelligence-icons/blob/master/ai/report.ai",
+      "pdf_format": "https://github.com/MISP/intelligence-icons/raw/master/pdf/report.pdf",
+      "png_format_256": "https://raw.githubusercontent.com/MISP/intelligence-icons/master/square_png/256/report.png"
+    },
+    {
+      "name": "restricted",
+      "source": "https://github.com/MISP/intelligence-icons/blob/master/ai/restricted.ai",
+      "pdf_format": "https://github.com/MISP/intelligence-icons/raw/master/pdf/restricted.pdf",
+      "png_format_256": "https://raw.githubusercontent.com/MISP/intelligence-icons/master/square_png/256/restricted.png"
+    },
+    {
+      "name": "sighting",
+      "source": "https://github.com/MISP/intelligence-icons/blob/master/ai/sighting.ai",
+      "pdf_format": "https://github.com/MISP/intelligence-icons/raw/master/pdf/sighting.pdf",
+      "png_format_256": "https://raw.githubusercontent.com/MISP/intelligence-icons/master/square_png/256/sighting.png"
+    },
+    {
+      "name": "source",
+      "source": "https://github.com/MISP/intelligence-icons/blob/master/ai/source.ai",
+      "pdf_format": "https://github.com/MISP/intelligence-icons/raw/master/pdf/source.pdf",
+      "png_format_256": "https://raw.githubusercontent.com/MISP/intelligence-icons/master/square_png/256/source.png"
+    },
+    {
+      "name": "taxonomy",
+      "source": "https://github.com/MISP/intelligence-icons/blob/master/ai/taxonomy.ai",
+      "pdf_format": "https://github.com/MISP/intelligence-icons/raw/master/pdf/taxonomy.pdf",
+      "png_format_256": "https://raw.githubusercontent.com/MISP/intelligence-icons/master/square_png/256/taxonomy.png"
+    },
+    {
+      "name": "threat_actor",
+      "source": "https://github.com/MISP/intelligence-icons/blob/master/ai/threat_actor.ai",
+      "pdf_format": "https://github.com/MISP/intelligence-icons/raw/master/pdf/threat_actor.pdf",
+      "png_format_256": "https://raw.githubusercontent.com/MISP/intelligence-icons/master/square_png/256/threat_actor.png"
+    },
+    {
+      "name": "tlp_amber",
+      "source": "https://github.com/MISP/intelligence-icons/blob/master/ai/tlp_amber.ai",
+      "pdf_format": "https://github.com/MISP/intelligence-icons/raw/master/pdf/tlp_amber.pdf",
+      "png_format_256": "https://raw.githubusercontent.com/MISP/intelligence-icons/master/square_png/256/tlp_amber.png"
+    },
+    {
+      "name": "tlp_green",
+      "source": "https://github.com/MISP/intelligence-icons/blob/master/ai/tlp_green.ai",
+      "pdf_format": "https://github.com/MISP/intelligence-icons/raw/master/pdf/tlp_green.pdf",
+      "png_format_256": "https://raw.githubusercontent.com/MISP/intelligence-icons/master/square_png/256/tlp_green.png"
+    },
+    {
+      "name": "tlp_red",
+      "source": "https://github.com/MISP/intelligence-icons/blob/master/ai/tlp_red.ai",
+      "pdf_format": "https://github.com/MISP/intelligence-icons/raw/master/pdf/tlp_red.pdf",
+      "png_format_256": "https://raw.githubusercontent.com/MISP/intelligence-icons/master/square_png/256/tlp_red.png"
+    },
+    {
+      "name": "tlp_white",
+      "source": "https://github.com/MISP/intelligence-icons/blob/master/ai/tlp_white.ai",
+      "pdf_format": "https://github.com/MISP/intelligence-icons/raw/master/pdf/tlp_white.pdf",
+      "png_format_256": "https://raw.githubusercontent.com/MISP/intelligence-icons/master/square_png/256/tlp_white.png"
+    },
+    {
+      "name": "tool",
+      "source": "https://github.com/MISP/intelligence-icons/blob/master/ai/tool.ai",
+      "pdf_format": "https://github.com/MISP/intelligence-icons/raw/master/pdf/tool.pdf",
+      "png_format_256": "https://raw.githubusercontent.com/MISP/intelligence-icons/master/square_png/256/tool.png"
+    },
+    {
+      "name": "url",
+      "source": "https://github.com/MISP/intelligence-icons/blob/master/ai/url.ai",
+      "pdf_format": "https://github.com/MISP/intelligence-icons/raw/master/pdf/url.pdf",
+      "png_format_256": "https://raw.githubusercontent.com/MISP/intelligence-icons/master/square_png/256/url.png"
+    },
+    {
+      "name": "victim",
+      "source": "https://github.com/MISP/intelligence-icons/blob/master/ai/victim.ai",
+      "pdf_format": "https://github.com/MISP/intelligence-icons/raw/master/pdf/victim.pdf",
+      "png_format_256": "https://raw.githubusercontent.com/MISP/intelligence-icons/master/square_png/256/victim.png"
+    },
+    {
+      "name": "vulnerability",
+      "source": "https://github.com/MISP/intelligence-icons/blob/master/ai/vulnerability.ai",
+      "pdf_format": "https://github.com/MISP/intelligence-icons/raw/master/pdf/vulnerability.pdf",
+      "png_format_256": "https://raw.githubusercontent.com/MISP/intelligence-icons/master/square_png/256/vulnerability.png"
+    }
+  ],
+  "version": 20190317,
+  "description": "Manifest file of MISP intelligence icons"
+}
